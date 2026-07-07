@@ -430,7 +430,7 @@ Tailwind CSS - UI styling
 |Proxy	         |   Nginx	                   | Latest|
 
 
-##🏗️ Architecture Flow
+## 🏗️ Architecture Flow
 
   GitHub → Docker Build → Minikube → Kubernetes → Application
 

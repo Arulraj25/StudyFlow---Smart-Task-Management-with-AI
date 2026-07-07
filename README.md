@@ -11,9 +11,6 @@
 
 **StudyFlow** is a full-stack task management application that uses AI (Google Gemini) to automatically break down complex tasks and suggest priorities. It includes a complete task management system, calendar view, dashboard analytics, and CI/CD deployment with auto-scaling Kubernetes.
 
-<p align="center">
-  <strong>Live Demo:</strong> <a href="http://localhost:8081">http://localhost:8081</a>
-</p>
 
 ---
 
@@ -275,26 +272,6 @@ docker-compose down
 
 # Remove volumes (clears database)
 docker-compose down -v
-
-☸️ Kubernetes Deployment
-🏗️ Architecture
-
-┌─────────────────────────────────────────────────────────┐
-│                    Minikube Cluster                     │
-│                                                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐ │
-│  │   Frontend   │  │   Backend    │  │   MongoDB    │ │
-│  │   (nginx)    │──│  (Node.js)   │──│   (Database) │ │
-│  │  Replicas: 2 │  │  Replicas: 2 │  │  Replicas: 1 │ │
-│  └──────────────┘  └──────────────┘  └──────────────┘ │
-│         │                 │                  │          │
-│         └─────────────────┼──────────────────┘          │
-│                           │                             │
-│                    ┌──────▼──────┐                      │
-│                    │  Ingress    │                      │
-│                    │  (nginx)    │                      │
-│                    └─────────────┘                      │
-└─────────────────────────────────────────────────────────┘
 
 
 📊 Kubernetes Resources

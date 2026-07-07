@@ -149,64 +149,74 @@ cd StudyFlow---Smart-Task-Management-with-AI
 #### 2. Set Up Environment Variables
 📝 Backend:
 
+```bash
 cp backend/.env.example backend/.env
 nano backend/.env
+```
 
 Required values in backend/.env:
 
-PORT=5000
+  PORT=5000
+  
+  NODE_ENV=development
 
-NODE_ENV=development
+  MONGO_URI=mongodb://127.0.0.1:27017/studyflow
 
-MONGO_URI=mongodb://127.0.0.1:27017/studyflow
+  JWT_SECRET=your-super-secret-jwt-key-min-32-characters
 
-JWT_SECRET=your-super-secret-jwt-key-min-32-characters
+  GEMINI_API_KEY=your-gemini-api-key-from-ai-studio
 
-GEMINI_API_KEY=your-gemini-api-key-from-ai-studio
-
-FRONTEND_URL=http://localhost:8081
+  FRONTEND_URL=http://localhost:8081
 
 📝 Frontend:
 
+```bash
 cp frontend/.env.example frontend/.env
+```
 # Default works for most cases
 
 #### 3. Start the Application
 ☸️ Option A: Minikube (Recommended)
 
 # Make scripts executable
+```bash
 chmod +x start.sh stop.sh status.sh
-
+```
 # Start the application
+```bash
 ./start.sh
-
+```
 # Wait 1-2 minutes for pods to be ready
 # Access: http://localhost:8081
 
 # Check status
+```bash
 ./status.sh
-
+```
 # Stop
+```bash
 ./stop.sh
-
+```
 🐳 Option B: Docker Compose
-
+```bash
 docker-compose up -d
 docker-compose logs -f
 docker-compose down
-
+```
 💻 Option C: Local Development
 
 # Backend (Terminal 1)
+```bash
 cd backend
 npm install
 npm start
-
+```
 # Frontend (Terminal 2)
+```bash
 cd frontend
 npm install
 npm run dev
-
+```
 
 #### 4. Access the Application
 
@@ -218,30 +228,34 @@ Health Check    	http://localhost:5000/health	Service status
 #### 5. Test the Application
 
 # Health Check
+```bash
 curl http://localhost:5000/health
-
+```
 # Signup
+```bash
 curl -X POST http://localhost:8081/api/auth/signup \
   -H "Content-Type: application/json" \
   -d '{"name":"Test User","email":"test@test.com","password":"Test@123"}'
-
+```
 # Login
+```bash
 curl -X POST http://localhost:8081/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"test@test.com","password":"Test@123"}'
-
+```
 
 🔧 Environment Variables
 
 Backend (backend/.env)
 
-Variable      	Description	                      Example
-PORT	          Server port	                      5000
-NODE_ENV      	Environment                      	development
-MONGO_URI      	MongoDB connection string	        mongodb://127.0.0.1:27017/studyflow
-JWT_SECRET	    JWT signing secret (min 32 chars)	your-super-secret-jwt-key
-GEMINI_API_KEY	Google Gemini API Key	            AIza...
-FRONTEND_URL	  CORS allowed origin	              http://localhost:8081
+|Variable      	|Description	                      |Example|
+|---------------|-----------------------------------|-------|
+|PORT	          |Server port	                      |5000|
+|NODE_ENV      	|Environment                      	|development|
+|MONGO_URI      |MongoDB connection string	        |mongodb://127.0.0.1:27017/studyflow|
+|JWT_SECRET	    |JWT signing secret (min 32 chars)	|your-super-secret-jwt-key|
+|GEMINI_API_KEY |Google Gemini API Key	            |AIza...|
+|FRONTEND_URL	  |CORS allowed origin	              |http://localhost:8081|
 
 
 Frontend (frontend/.env)
@@ -254,30 +268,37 @@ VITE_APP_NAME	      Application name	StudyFlow
 Build Images
 
 # Build backend
+```bash
 docker build -t studyflow-backend:latest -f backend/Dockerfile ./backend
-
+```
 # Build frontend
+```bash
 docker build -t studyflow-frontend:latest -f frontend/Dockerfile ./frontend
-
+```
 # Build both for Minikube
+```bash
 docker build -t studyflow-backend:latest -f backend/Dockerfile ./backend && \
 docker build -t studyflow-frontend:latest -f frontend/Dockerfile ./frontend
-
+```
 Docker Compose Commands
 
 # Start all services
+```bash
 docker-compose up -d
-
+```
 # View logs
+```bash
 docker-compose logs -f backend
 docker-compose logs -f frontend
-
+```
 # Stop services
+```bash
 docker-compose down
-
+```
 # Remove volumes (clears database)
+```bash
 docker-compose down -v
-
+```
 
 📊 Kubernetes Resources
 
@@ -294,30 +315,37 @@ Ingress        	k8s/ingress.yaml	    HTTP routing
 
 🔧 Useful Commands
 
-# Start application
+## Start application
+```bash
 ./start.sh
-
-# Check status
+```
+## Check status
+```bash
 ./status.sh
-
-# View pods
+```
+## View pods
+```bash
 kubectl get pods -n studyflow
-
-# View services
+```
+## View services
+```bash
 kubectl get svc -n studyflow
-
-# View logs
+```
+## View logs
+```bash
 kubectl logs -f -n studyflow deployment/backend
 kubectl logs -f -n studyflow deployment/frontend
-
-# Manual scaling
+```
+## Manual scaling
+```bash
 kubectl scale deployment backend -n studyflow --replicas=5
-
-# Port forward
+```
+## Port forward
+```bash
 kubectl port-forward -n studyflow svc/frontend-service 8081:80
 kubectl port-forward -n studyflow svc/backend-service 5000:5000
-
-⚡ Auto-Scaling
+```
+# ⚡ Auto-Scaling
 
 📊 HPA Configuration
 The application uses Horizontal Pod Autoscaler (HPA) for automatic scaling:
@@ -335,22 +363,26 @@ Frontend HPA:
 
 📈 Monitoring Scaling
 
-# Watch HPA status
+## Watch HPA status
+```bash
 kubectl get hpa -n studyflow -w
-
-# Watch pod scaling
+```
+## Watch pod scaling
+```bash
 kubectl get pods -n studyflow -l app=backend -w
-
-# View scaling events
+```
+## View scaling events
+```bash
 kubectl get events -n studyflow --watch | grep -i scaling
-
-# Check resource usage
+```
+## Check resource usage
+```bash
 kubectl top pods -n studyflow
+```
 
+## 🔌 API Endpoints
 
-🔌 API Endpoints
-
-🔐 Authentication
+## 🔐 Authentication
 
 Method	  Endpoint	          Description
 POST	    /api/auth/signup	  Register new user

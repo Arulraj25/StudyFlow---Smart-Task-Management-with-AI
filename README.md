@@ -146,7 +146,7 @@ cd StudyFlow---Smart-Task-Management-with-AI
 ```
 
 
-2. Set Up Environment Variables
+#### 2. Set Up Environment Variables
 📝 Backend:
 
 cp backend/.env.example backend/.env
@@ -155,10 +155,15 @@ nano backend/.env
 Required values in backend/.env:
 
 PORT=5000
+
 NODE_ENV=development
+
 MONGO_URI=mongodb://127.0.0.1:27017/studyflow
+
 JWT_SECRET=your-super-secret-jwt-key-min-32-characters
+
 GEMINI_API_KEY=your-gemini-api-key-from-ai-studio
+
 FRONTEND_URL=http://localhost:8081
 
 📝 Frontend:
@@ -166,7 +171,7 @@ FRONTEND_URL=http://localhost:8081
 cp frontend/.env.example frontend/.env
 # Default works for most cases
 
-3. Start the Application
+#### 3. Start the Application
 ☸️ Option A: Minikube (Recommended)
 
 # Make scripts executable
@@ -203,14 +208,14 @@ npm install
 npm run dev
 
 
-4. Access the Application
+#### 4. Access the Application
 
 Service	          URL	                          Description
 Frontend	        http://localhost:8081	        Main application UI
 BackendAPI	      http://localhost:5000	        REST API
 Health Check    	http://localhost:5000/health	Service status
 
-5. Test the Application
+#### 5. Test the Application
 
 # Health Check
 curl http://localhost:5000/health

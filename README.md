@@ -14,23 +14,6 @@
 
 ---
 
-## 📚 Table of Contents
-
-- [Overview](#overview)
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [📁 Project Structure](#-project-structure)
-- [🚀 Getting Started](#-getting-started)
-- [🔧 Environment Variables](#-environment-variables)
-- [🐳 Docker Deployment](#-docker-deployment)
-- [☸️ Kubernetes Deployment](#️-kubernetes-deployment)
-- [⚡ Auto-Scaling](#-auto-scaling)
-- [🔌 API Endpoints](#-api-endpoints)
-- [🔥 Load Testing](#-load-testing)
-- [🔍 Troubleshooting](#-troubleshooting)
-- [👨‍💻 Author](#-author)
-
----
 
 ## Overview
 
@@ -416,18 +399,10 @@ kubectl top pods -n studyflow
 |GET	     | /health	|  Service health check|
 
 
-👨‍💻 Author
-
-Arulraj
-
-GitHub: github.com/Arulraj25
-
-Project: StudyFlow - Smart Task Management with AI
-
-📝 License
+## 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 Google Gemini AI - AI-powered task breakdown
 
 React - Frontend framework
@@ -441,7 +416,7 @@ Kubernetes - Container orchestration
 Tailwind CSS - UI styling
 
 
-📊 Project Status
+## 📊 Project Status
 
 |Component	       | Technology    	         | Version|
 |------------------|--------------------------|-------|
@@ -455,13 +430,13 @@ Tailwind CSS - UI styling
 |Proxy	         |   Nginx	                   | Latest|
 
 
-🏗️ Architecture Flow
+##🏗️ Architecture Flow
 
   GitHub → Docker Build → Minikube → Kubernetes → Application
 
   Code is pushed to GitHub → Docker images built → Deployed to Minikube → Kubernetes runs the application → Auto-scaling based on load
 
-🎯 Access
+## 🎯 Access
 
 |Service      |	URL|
 |-------------|-----|

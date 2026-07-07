@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # MongoDB Database (Official Docker Image)
+  mongodb:
+    image: mongo:6.0
+    container_name: studyflow-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_DATABASE: studyflow
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - studyflow-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: studyflow-backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - MONGO_URI=mongodb://admin:password123@mongodb:27017/studyflow?authSource=admin
+      - JWT_SECRET=${JWT_SECRET:-your_super_secret_jwt_key}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-your_gemini_api_key}
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - studyflow-network
+
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: studyflow-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - studyflow-network
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  studyflow-network:
+    driver: bridge

@@ -260,9 +260,10 @@ Backend (backend/.env)
 
 Frontend (frontend/.env)
 
-Variable          	Description      	Example
-VITE_API_URL	      Backend API URL	  /api
-VITE_APP_NAME	      Application name	StudyFlow
+|Variable          |	Description      	|Example|
+|------------------|--------------------|-------|
+|VITE_API_URL	     |  Backend API URL	  |/api|
+|VITE_APP_NAME	   |  Application name	|StudyFlow|
 
 🐳 Docker Deployment
 Build Images
@@ -302,15 +303,16 @@ docker-compose down -v
 
 📊 Kubernetes Resources
 
-Resource	      File	                Description
-Namespace	      k8s/namespace.yaml	  studyflow namespace
-ConfigMap	      k8s/configmap.yaml	  Environment variables
-Secrets	        k8s/secrets.yaml    	Sensitive data (JWT, API keys)
-MongoDB	        k8s/mongodb/	        Database deployment + service + storage
-Backend        	k8s/backend/	        API deployment + service
-Frontend	      k8s/frontend/        	UI deployment + service
-HPA	            k8s/hpa.yaml	        Auto-scaling configuration
-Ingress        	k8s/ingress.yaml	    HTTP routing
+|Resource	      |File	                |Description|
+|---------------|---------------------|------------|
+|Namespace	     | k8s/namespace.yaml	 | studyflow namespace|
+|ConfigMap	     | k8s/configmap.yaml	 | Environment variables|
+|Secrets	       | k8s/secrets.yaml    |	Sensitive data (JWT, API keys)|
+|MongoDB	       | k8s/mongodb/	       | Database deployment + service + storage|
+|Backend        |	k8s/backend/	       | API deployment + service|
+|Frontend	     | k8s/frontend/        |	UI deployment + service|
+|HPA	          |  k8s/hpa.yaml	       | Auto-scaling configuration|
+|Ingress        |	k8s/ingress.yaml	   | HTTP routing|
 
 
 🔧 Useful Commands
@@ -380,34 +382,38 @@ kubectl get events -n studyflow --watch | grep -i scaling
 kubectl top pods -n studyflow
 ```
 
-## 🔌 API Endpoints
+# 🔌 API Endpoints
 
 ## 🔐 Authentication
 
-Method	  Endpoint	          Description
-POST	    /api/auth/signup	  Register new user
-POST	    /api/auth/register	Alias for signup
-POST	    /api/auth/login	    Login user
-GET	      /api/auth/me	      Get current user
+|Method	  |Endpoint	          |Description|
+|---------|-------------------|------------|
+|POST	   | /api/auth/signup	 | Register new user|
+|POST	   | /api/auth/register	|Alias for signup|
+|POST	   | /api/auth/login	  |  Login user|
+|GET	    |  /api/auth/me	     | Get current user|
 
-📝 Tasks
+## 📝 Tasks
 
-Method	  Endpoint      	Description
-GET	      /api/tasks	    Get all tasks
-POST     	/api/tasks	    Create task
-PUT	      /api/tasks/:id	Update task
-DELETE	  /api/tasks/:id	Delete task
+|Method	  |Endpoint      |	Description|
+|---------|--------------|--------------|
+|GET	     | /api/tasks	  |  Get all tasks|
+|POST     |	/api/tasks	   | Create task|
+|PUT	   |  /api/tasks/:id	|Update task|
+|DELETE	 | /api/tasks/:id	|Delete task|
 
-🤖 AI
+## 🤖 AI
 
-Method	  Endpoint        	Description
-POST	    /api/ai/suggest	  Get AI task breakdown
-POST	    /api/ai/priority	Get AI priority suggestion
+|Method	  |Endpoint        |	Description|
+|---------|-----------------|-------------|
+|POST	   | /api/ai/suggest	|  Get AI task breakdown|
+|POST	   | /api/ai/priority	|Get AI priority suggestion|
 
-💚 Health
+## 💚 Health
 
-Method	  Endpoint	Description
-GET	      /health	  Service health check
+|Method	 | Endpoint	|Description|
+|---------|----------|----------|
+|GET	     | /health	|  Service health check|
 
 
 👨‍💻 Author
@@ -437,28 +443,30 @@ Tailwind CSS - UI styling
 
 📊 Project Status
 
-Component	        Technology    	          Version
-Frontend	        React + Vite + Tailwind	  18.x
-Backend	          Node.js + Express	        18.x
-Database	        MongoDB	                  6.0
-AI	              Google Gemini	            Latest
-Containerization	Docker	                  Latest
-Orchestration	    Kubernetes + Minikube	    1.28+
-Auto-Scaling	    HPA	                      Latest
-Proxy	            Nginx	                    Latest
+|Component	       | Technology    	         | Version|
+|------------------|--------------------------|-------|
+|Frontend	        |React + Vite + Tailwind	  |18.x|
+|Backend	         | Node.js + Express	     |  18.x|
+|Database	        |MongoDB	                  |6.0|
+|AI	              |Google Gemini	            |Latest|
+|Containerization	|Docker	                  |Latest|
+|Orchestration	  |  Kubernetes + Minikube	 |   1.28+|
+|Auto-Scaling	   | HPA	                      |Latest|
+|Proxy	         |   Nginx	                   | Latest|
 
 
 🏗️ Architecture Flow
 
-GitHub → Docker Build → Minikube → Kubernetes → Application
+  GitHub → Docker Build → Minikube → Kubernetes → Application
 
-Code is pushed to GitHub → Docker images built → Deployed to Minikube → Kubernetes runs the application → Auto-scaling based on load
+  Code is pushed to GitHub → Docker images built → Deployed to Minikube → Kubernetes runs the application → Auto-scaling based on load
 
 🎯 Access
 
-Service      	URL
-Frontend	    http://localhost:8081
-Backend       API	http://localhost:5000
-Health Check	http://localhost:5000/health
+|Service      |	URL|
+|-------------|-----|
+|Frontend	   | http://localhost:8081|
+|Backend      | API	http://localhost:5000|
+|Health Check	|http://localhost:5000/health|
 
 <p align="center">Made with ❤️ by <a href="https://github.com/Arulraj25">Arulraj</a></p> 

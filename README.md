@@ -1,447 +1,244 @@
-# 📚 StudyFlow - Smart Task Management with AI
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-  <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white" alt="Gemini AI"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
-</p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=750&lines=Hi+%F0%9F%91%8B+I'm+Arulraj+V;Aspiring+DevOps+Engineer+%E2%9A%99%EF%B8%8F;Docker+%7C+Kubernetes+%7C+Terraform+%7C+AWS;From+Code+Commit+to+Production+%F0%9F%9A%80)](https://git.io/typing-svg)
 
-**StudyFlow** is a full-stack task management application that uses AI (Google Gemini) to automatically break down complex tasks and suggest priorities. It includes a complete task management system, calendar view, dashboard analytics, and CI/CD deployment with auto-scaling Kubernetes.
+<br/>
 
+<a href="https://arulraj25.github.io/">
+  <img src="https://img.shields.io/badge/%F0%9F%8C%90%20Portfolio-Visit%20Site-6366F1?style=for-the-badge" />
+</a>
+<a href="https://www.linkedin.com/in/arulraj25/">
+  <img src="https://img.shields.io/badge/LinkedIn-Arulraj%20V-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="mailto:arulraj87542aj@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
 
----
+<br/><br/>
 
+![Profile Views](https://komarev.com/ghpvc/?username=Arulraj25&color=6366F1&style=flat-square&label=Profile+Views)
 
-## Overview
-
-StudyFlow lets teams and individuals manage tasks efficiently with AI-powered assistance. Drag-and-drop task management, AI task breakdown, priority suggestions, calendar view, and dashboard analytics — all in one place. Every task can be broken down into subtasks using Google Gemini AI, and priorities are suggested based on task content and due dates.
-
-### 🎯 Live Access
-
-| Service | URL |
-|---------|-----|
-| **Application** | <a href="http://localhost:8081">http://localhost:8081</a> |
-| **Backend API** | <a href="http://localhost:5000">http://localhost:5000</a> |
-| **Health Check** | <a href="http://localhost:5000/health">http://localhost:5000/health</a> |
+</div>
 
 ---
 
-## ✨ Features
+## 👤 About Me
 
-### 🔹 Core Features
+> *Final-year B.Tech student specializing in DevOps — building production-grade containerized apps, automated CI/CD pipelines, and cloud infrastructure as code.*
 
-| Feature | Description |
-|---------|-------------|
-| 🔐 **User Authentication** | JWT-based signup/login with secure password hashing |
-| 📝 **Task Management** | Full CRUD operations for tasks with status tracking |
-| 📊 **Task Dashboard** | Overview of all tasks with status counts and priority indicators |
-| 📅 **Calendar View** | Visual task scheduling with due dates |
-| 🤖 **AI Task Breakdown** | Google Gemini AI breaks down complex tasks into subtasks |
-| 🎯 **Priority Suggestions** | AI suggests priority (Low/Medium/High) based on task content |
-| 📱 **Responsive Design** | Tailwind CSS for mobile-first responsive UI |
-
-### 🔹 Unique Features
-
-| Feature | Description |
-|---------|-------------|
-| ★ **AI-Powered Breakdown** | One-click AI task breakdown using Google Gemini API |
-| ★ **Smart Priority** | AI analyzes task content and suggests appropriate priority |
-| ★ **Real-Time Updates** | Task changes reflect immediately across all views |
-| ★ **Dark/Light Theme** | Full theme toggle with preference saved |
-| ★ **Task Filtering** | Filter tasks by status, priority, and date |
-| ★ **Auto-Scaling** | Kubernetes HPA automatically scales based on load |
+```yaml
+Name       : Arulraj V
+Location   : Tamil Nadu, India 🇮🇳
+College    : Erode Sengunthar Engineering College
+Degree     : B.Tech — AI & Data Science  |  CGPA: 7.0  |  2023–2027
+Internship : DevOps Intern @ CubeAI Solutions Tech Pvt Ltd  (Nov 2025 – Feb 2026)
+Core Stack : Docker · Kubernetes · Jenkins · Terraform · AWS · Azure
+Learning   : Advanced Kubernetes · Ansible · Helm Charts
+Status     : Open to DevOps / Cloud Engineer Opportunities ✅
+```
 
 ---
 
-## 🛠️ Tech Stack
+## 💼 Internship — CubeAI Solutions Tech Pvt Ltd
 
-### Frontend
+**DevOps Intern &nbsp;|&nbsp; Nov 2025 – Feb 2026**
 
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" width="80"/> | 18.x | UI Framework |
-| <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" width="60"/> | 4.x | Build Tool |
-| <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" width="100"/> | 3.x | Styling |
-
-### Backend
-
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white" width="80"/> | 18.x | Runtime |
-| <img src="https://img.shields.io/badge/Express.js-404D59?style=flat&logo=express&logoColor=white" width="90"/> | 4.x | Web Framework |
-| <img src="https://img.shields.io/badge/JWT-000000?style=flat&logo=json-web-tokens&logoColor=white" width="70"/> | 9.x | Authentication |
-
-### Database
-
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white" width="90"/> | 6.0 | Database |
-
-### AI & Machine Learning
-
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=flat&logo=google&logoColor=white" width="130"/> | Latest | AI Task Breakdown |
-
-### Containerization & Orchestration
-
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" width="80"/> | Latest | Containerization |
-| <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white" width="110"/> | 1.28+ | Orchestration |
-| <img src="https://img.shields.io/badge/Minikube-326CE5?style=flat&logo=kubernetes&logoColor=white" width="100"/> | 1.38+ | Local Cluster |
-
-### DevOps & Monitoring
-
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" width="80"/> | Latest | Reverse Proxy |
-| <img src="https://img.shields.io/badge/HPA-326CE5?style=flat&logo=kubernetes&logoColor=white" width="80"/> | Latest | Auto-Scaling |
-| <img src="https://img.shields.io/badge/Metrics_Server-326CE5?style=flat&logo=kubernetes&logoColor=white" width="130"/> | Latest | Resource Monitoring |
-
+- Containerized microservices using **Docker**, eliminating environment inconsistency across dev and production
+- Implemented **GitFlow** branching strategy to streamline team collaboration and pull request reviews
+- Built multi-stage **CI/CD pipelines with Jenkins**, integrating automated testing at every deployment stage
+- Provisioned **AWS EC2 infrastructure with Terraform**, enabling consistent and repeatable deployments via IaC
 
 ---
 
-## 🚀 Getting Started
+## 🌟 Featured Project — StudyFlow
 
-### 📋 Prerequisites
+### 📚 StudyFlow — AI-Powered Task Management with Kubernetes Auto-Scaling
 
-| Tool | Version | Check Command |
-|------|---------|---------------|
-| Docker | Latest | `docker --version` |
-| Minikube | v1.38+ | `minikube version` |
-| kubectl | Latest | `kubectl version` |
-| Node.js | 18+ | `node --version` |
-| npm | Latest | `npm --version` |
-| MongoDB | 6.0+ | `mongod --version` |
+> This is my most advanced DevOps project — a production-grade, full-stack application deploying on **Kubernetes with HPA auto-scaling**, **Nginx reverse proxy**, **Google Gemini AI**, **JWT security**, and **MongoDB persistent volumes** — all containerized with Docker and orchestrated with Minikube.
 
-### 🔧 Installation
+**[→ View Repository](https://github.com/Arulraj25/StudyFlow---Smart-Task-Management-with-AI)**
 
-#### 1. Clone the Repository
-
-```bash
-
-git clone https://github.com/Arulraj25/StudyFlow---Smart-Task-Management-with-AI.git
-cd StudyFlow---Smart-Task-Management-with-AI
+```
+Code Push → Docker Build → Minikube Cluster → Kubernetes Pods → Nginx → Live App
+                                                      ↓
+                                         HPA Auto-Scales on Load
+                                    Backend:  2 → 5 replicas at 70% CPU
+                                    Frontend: 2 → 5 replicas at 70% CPU
 ```
 
+| DevOps Layer | What Was Built |
+|---|---|
+| 🤖 **AI Integration** | Google Gemini API — 1-click task breakdown into subtasks + smart priority suggestions |
+| ☸️ **Kubernetes** | Namespace · ConfigMap · Secrets · Deployments · Services · Ingress · PVC |
+| 📈 **Auto-Scaling (HPA)** | Backend scales 2→5 pods at 70% CPU / 80% memory · Frontend scales 2→5 at 70% CPU |
+| 🐳 **Docker** | Multi-stage Dockerfiles for React (Vite) + Node.js · Docker Compose for local dev |
+| 🌐 **Nginx** | Reverse proxy routing all frontend ↔ backend traffic cleanly |
+| 🗄️ **Database** | MongoDB 6.0 with Kubernetes Persistent Volume Claims — data survives pod restarts |
+| 🔐 **Security** | JWT authentication · bcrypt password hashing · K8s Secrets for API keys · CORS |
+| 📊 **Monitoring** | `kubectl top pods` · HPA watch · scaling events log |
 
-#### 2. Set Up Environment Variables
-📝 Backend:
-
-```bash
-cp backend/.env.example backend/.env
-nano backend/.env
-```
-
-Required values in backend/.env:
-
-  PORT=5000
-  
-  NODE_ENV=development
-
-  MONGO_URI=mongodb://127.0.0.1:27017/studyflow
-
-  JWT_SECRET=your-super-secret-jwt-key-min-32-characters
-
-  GEMINI_API_KEY=your-gemini-api-key-from-ai-studio
-
-  FRONTEND_URL=http://localhost:8081
-
-📝 Frontend:
-
-```bash
-cp frontend/.env.example frontend/.env
-```
-# Default works for most cases
-
-#### 3. Start the Application
-☸️ Option A: Minikube (Recommended)
-
-# Make scripts executable
-```bash
-chmod +x start.sh stop.sh status.sh
-```
-# Start the application
-```bash
-./start.sh
-```
-# Wait 1-2 minutes for pods to be ready
-# Access: http://localhost:8081
-
-# Check status
-```bash
-./status.sh
-```
-# Stop
-```bash
-./stop.sh
-```
-🐳 Option B: Docker Compose
-```bash
-docker-compose up -d
-docker-compose logs -f
-docker-compose down
-```
-💻 Option C: Local Development
-
-# Backend (Terminal 1)
-```bash
-cd backend
-npm install
-npm start
-```
-# Frontend (Terminal 2)
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-#### 4. Access the Application
-
-Service	          URL	                          Description
-Frontend	        http://localhost:8081	        Main application UI
-BackendAPI	      http://localhost:5000	        REST API
-Health Check    	http://localhost:5000/health	Service status
-
-#### 5. Test the Application
-
-# Health Check
-```bash
-curl http://localhost:5000/health
-```
-# Signup
-```bash
-curl -X POST http://localhost:8081/api/auth/signup \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Test User","email":"test@test.com","password":"Test@123"}'
-```
-# Login
-```bash
-curl -X POST http://localhost:8081/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"test@test.com","password":"Test@123"}'
-```
-
-🔧 Environment Variables
-
-Backend (backend/.env)
-
-|Variable      	|Description	                      |Example|
-|---------------|-----------------------------------|-------|
-|PORT	          |Server port	                      |5000|
-|NODE_ENV      	|Environment                      	|development|
-|MONGO_URI      |MongoDB connection string	        |mongodb://127.0.0.1:27017/studyflow|
-|JWT_SECRET	    |JWT signing secret (min 32 chars)	|your-super-secret-jwt-key|
-|GEMINI_API_KEY |Google Gemini API Key	            |AIza...|
-|FRONTEND_URL	  |CORS allowed origin	              |http://localhost:8081|
-
-
-Frontend (frontend/.env)
-
-|Variable          |	Description      	|Example|
-|------------------|--------------------|-------|
-|VITE_API_URL	     |  Backend API URL	  |/api|
-|VITE_APP_NAME	   |  Application name	|StudyFlow|
-
-🐳 Docker Deployment
-Build Images
-
-# Build backend
-```bash
-docker build -t studyflow-backend:latest -f backend/Dockerfile ./backend
-```
-# Build frontend
-```bash
-docker build -t studyflow-frontend:latest -f frontend/Dockerfile ./frontend
-```
-# Build both for Minikube
-```bash
-docker build -t studyflow-backend:latest -f backend/Dockerfile ./backend && \
-docker build -t studyflow-frontend:latest -f frontend/Dockerfile ./frontend
-```
-Docker Compose Commands
-
-# Start all services
-```bash
-docker-compose up -d
-```
-# View logs
-```bash
-docker-compose logs -f backend
-docker-compose logs -f frontend
-```
-# Stop services
-```bash
-docker-compose down
-```
-# Remove volumes (clears database)
-```bash
-docker-compose down -v
-```
-
-📊 Kubernetes Resources
-
-|Resource	      |File	                |Description|
-|---------------|---------------------|------------|
-|Namespace	     | k8s/namespace.yaml	 | studyflow namespace|
-|ConfigMap	     | k8s/configmap.yaml	 | Environment variables|
-|Secrets	       | k8s/secrets.yaml    |	Sensitive data (JWT, API keys)|
-|MongoDB	       | k8s/mongodb/	       | Database deployment + service + storage|
-|Backend        |	k8s/backend/	       | API deployment + service|
-|Frontend	     | k8s/frontend/        |	UI deployment + service|
-|HPA	          |  k8s/hpa.yaml	       | Auto-scaling configuration|
-|Ingress        |	k8s/ingress.yaml	   | HTTP routing|
-
-
-🔧 Useful Commands
-
-## Start application
-```bash
-./start.sh
-```
-## Check status
-```bash
-./status.sh
-```
-## View pods
-```bash
-kubectl get pods -n studyflow
-```
-## View services
-```bash
-kubectl get svc -n studyflow
-```
-## View logs
-```bash
-kubectl logs -f -n studyflow deployment/backend
-kubectl logs -f -n studyflow deployment/frontend
-```
-## Manual scaling
-```bash
-kubectl scale deployment backend -n studyflow --replicas=5
-```
-## Port forward
-```bash
-kubectl port-forward -n studyflow svc/frontend-service 8081:80
-kubectl port-forward -n studyflow svc/backend-service 5000:5000
-```
-# ⚡ Auto-Scaling
-
-📊 HPA Configuration
-The application uses Horizontal Pod Autoscaler (HPA) for automatic scaling:
-
-Backend HPA:
-  Min Replicas: 2
-  Max Replicas: 5
-  CPU Threshold: 70%
-  Memory Threshold: 80%
-
-Frontend HPA:
-  Min Replicas: 2
-  Max Replicas: 5
-  CPU Threshold: 70%
-
-📈 Monitoring Scaling
-
-## Watch HPA status
-```bash
-kubectl get hpa -n studyflow -w
-```
-## Watch pod scaling
-```bash
-kubectl get pods -n studyflow -l app=backend -w
-```
-## View scaling events
-```bash
-kubectl get events -n studyflow --watch | grep -i scaling
-```
-## Check resource usage
-```bash
-kubectl top pods -n studyflow
-```
-
-# 🔌 API Endpoints
-
-## 🔐 Authentication
-
-|Method	  |Endpoint	          |Description|
-|---------|-------------------|------------|
-|POST	   | /api/auth/signup	 | Register new user|
-|POST	   | /api/auth/register	|Alias for signup|
-|POST	   | /api/auth/login	  |  Login user|
-|GET	    |  /api/auth/me	     | Get current user|
-
-## 📝 Tasks
-
-|Method	  |Endpoint      |	Description|
-|---------|--------------|--------------|
-|GET	     | /api/tasks	  |  Get all tasks|
-|POST     |	/api/tasks	   | Create task|
-|PUT	   |  /api/tasks/:id	|Update task|
-|DELETE	 | /api/tasks/:id	|Delete task|
-
-## 🤖 AI
-
-|Method	  |Endpoint        |	Description|
-|---------|-----------------|-------------|
-|POST	   | /api/ai/suggest	|  Get AI task breakdown|
-|POST	   | /api/ai/priority	|Get AI priority suggestion|
-
-## 💚 Health
-
-|Method	 | Endpoint	|Description|
-|---------|----------|----------|
-|GET	     | /health	|  Service health check|
-
-
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-Google Gemini AI - AI-powered task breakdown
-
-React - Frontend framework
-
-Node.js - Backend runtime
-
-MongoDB - Database
-
-Kubernetes - Container orchestration
-
-Tailwind CSS - UI styling
-
-
-## 📊 Project Status
-
-|Component	       | Technology    	         | Version|
-|------------------|--------------------------|-------|
-|Frontend	        |React + Vite + Tailwind	  |18.x|
-|Backend	         | Node.js + Express	     |  18.x|
-|Database	        |MongoDB	                  |6.0|
-|AI	              |Google Gemini	            |Latest|
-|Containerization	|Docker	                  |Latest|
-|Orchestration	  |  Kubernetes + Minikube	 |   1.28+|
-|Auto-Scaling	   | HPA	                      |Latest|
-|Proxy	         |   Nginx	                   | Latest|
-
-
-## 🏗️ Architecture Flow
-
-  GitHub → Docker Build → Minikube → Kubernetes → Application
-
-  Code is pushed to GitHub → Docker images built → Deployed to Minikube → Kubernetes runs the application → Auto-scaling based on load
-
-## 🎯 Access
-
-|Service      |	URL|
-|-------------|-----|
-|Frontend	   | http://localhost:8081|
-|Backend      | API	http://localhost:5000|
-|Health Check	|http://localhost:5000/health|
-
-<p align="center">Made with ❤️ by <a href="https://github.com/Arulraj25">Arulraj</a></p> 
+**Stack:** `React 18` `Vite` `Tailwind CSS` `Node.js` `Express` `MongoDB` `Google Gemini AI` `Docker` `Kubernetes` `Minikube` `HPA` `Nginx` `JWT`
+
+---
+
+## 🚀 Other Projects
+
+### ⚙️ CI/CD & Automation
+
+---
+
+**[Full-Stack Quiz & Exam Application](https://github.com/Arulraj25/Full-stack-quiz-exam-application)**
+> Full-stack quiz app with user authentication, quiz management, and real-time results tracking. Deployed on **AWS EC2** using **Docker** and automated with **GitHub Actions** CI/CD pipeline.
+
+`React` `Node.js` `Express` `MySQL` `Docker` `AWS EC2` `GitHub Actions`
+
+---
+
+**[DashForge — Custom Dashboard with Jenkins CI/CD](https://github.com/Arulraj25/customizable-dashboard)**
+> Drag-and-drop dashboard builder with customer order management. Full automated pipeline: `git push → Jenkins → Docker image → AWS EC2`.
+
+`Jenkins` `Docker` `AWS EC2` `GitHub` `JavaScript`
+
+---
+
+**[365 Days Calendar — Multi-Cloud with Terraform](https://github.com/Arulraj25/365days-special-calender)**
+> Flask web app deployed on **AWS EC2 via Terraform IaC** and separately on **Azure** — demonstrating a real multi-cloud deployment workflow.
+
+`Docker` `Terraform` `AWS EC2` `Azure` `Flask` `Python` · [Azure version →](https://github.com/Arulraj25/365-calenda)
+
+---
+
+### 🐳 Containerization & Orchestration
+
+---
+
+**[E-Commerce Platform — Docker Compose Multi-Service](https://github.com/Arulraj25/e-commerce-app)**
+> Full e-commerce platform (Flask + MySQL + Nginx) orchestrated with **Docker Compose** — single `docker-compose up` starts the entire stack.
+
+`Docker Compose` `Flask` `MySQL` `Nginx` `HTML`
+
+---
+
+**[Weather Analytics Dashboard — Dockerized API Stack](https://github.com/Arulraj25/-Weather-Analytics-Dashboard)**
+> Live weather API → Python backend → MySQL → interactive frontend. All services containerized and production-ready.
+
+`Docker` `Python` `Flask` `MySQL` `REST API`
+
+---
+
+**[Mood Music App — Full-Stack Container](https://github.com/Arulraj25/mood-music-app)**
+> Mood-based music recommendation app — Python backend + HTML/JS frontend, fully Dockerized for portable deployment.
+
+`Docker` `Python` `JavaScript` `HTML/CSS`
+
+---
+
+### ☁️ Cloud & Data Engineering
+
+---
+
+**[Olympic Data Pipeline — Azure End-to-End Architecture](https://github.com/Arulraj25/olympic-data-engineering-azure)**
+> Enterprise-grade cloud pipeline: Raw CSV → **Azure Data Factory** → **ADLS Gen2** → **Databricks (Spark)** → **Synapse Analytics** → Power BI dashboards.
+
+`Azure Data Factory` `Databricks` `Apache Spark` `Synapse Analytics` `Data Lake Gen2` `Jupyter Notebook`
+
+---
+
+### 🤖 Automation & Scripting
+
+---
+
+**[Crypto Market Scraper](https://github.com/Arulraj25/crypto-market-scraper)** — Scheduled CoinMarketCap scraper with live analysis & visualizations, Dockerized for consistent runs.
+`Python` `Selenium` `Pandas` `Docker`
+
+**[IMDB Web Scraper](https://github.com/Arulraj25/IMDB_web_scraper)** — Automated movie data pipeline with year-range filtering and Excel export.
+`Python` `Selenium`
+
+**[Library Management System](https://github.com/Arulraj25/Library-Management-System)** — MySQL + Python with stored procedures, triggers, and auto-fine calculation.
+`Python` `MySQL`
+
+---
+
+## 🛠️ Technical Skills
+
+| Category | Tools & Technologies |
+|---|---|
+| **Containers & Orchestration** | Docker · Docker Compose · Kubernetes · Minikube · HPA · Nginx |
+| **CI/CD** | Jenkins · GitHub Actions · GitFlow |
+| **Cloud Platforms** | AWS (EC2, IAM, S3) · Azure (ADF, Databricks, Synapse, Data Lake Gen2) |
+| **Infrastructure as Code** | Terraform · Bash Scripting · Linux |
+| **Languages** | Python · JavaScript · SQL · Node.js |
+| **Databases** | MongoDB · MySQL |
+| **Data & BI** | Power BI · Databricks · PySpark · Pandas |
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Arulraj25&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=6366F1&icon_color=6366F1&bg_color=0d1117" height="170"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arulraj25&layout=donut&theme=tokyonight&hide_border=true&title_color=6366F1&bg_color=0d1117&langs_count=6" height="170"/>
+
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com?user=Arulraj25&theme=tokyonight&hide_border=true&background=0d1117&ring=6366F1&fire=f59e0b&currStreakLabel=6366F1&sideLabels=6366F1"/>
+
+<br/><br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=Arulraj25&theme=tokyonight&no-frame=true&row=1&column=6&margin-w=6&no-bg=true"/>
+
+</div>
+
+---
+
+## 📈 Contribution Activity
+
+<div align="center">
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Arulraj25&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117&color=6366F1&line=6366F1&point=f59e0b)
+
+</div>
+
+---
+
+## 🎓 Education
+
+| Degree | Institution | Year | Grade |
+|---|---|---|---|
+| 🎓 B.Tech — AI & Data Science | Erode Sengunthar Engineering College | 2023–2027 | CGPA 7.0 |
+| 📗 HSC — Computer Science | Mangalam HRS School, Anthiyur | 2022–2023 | — |
+| 📘 SSLC | Mangalam HRS School, Anthiyur | 2020–2021 | — |
+
+---
+
+## 🏅 Certifications
+
+| Certification | Issuer |
+|---|---|
+| Python Basic Course | Coursera |
+| SQL — Intermediate | HackerRank |
+| Hands-on: Docker · Kubernetes · Jenkins · Terraform · GitHub Actions · AWS · Azure | Project-Based |
+
+---
+
+<div align="center">
+
+**Actively looking for DevOps / Cloud Engineer opportunities across India 🇮🇳**
+
+*If you find any repo useful, a ⭐ genuinely helps — thank you!*
+
+<br/>
+
+<a href="https://arulraj25.github.io/">
+  <img src="https://img.shields.io/badge/%F0%9F%8C%90%20Visit%20Portfolio-6366F1?style=for-the-badge" />
+</a>
+<a href="https://www.linkedin.com/in/arulraj25/">
+  <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="mailto:arulraj87542aj@gmail.com">
+  <img src="https://img.shields.io/badge/Send%20an%20Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+</div>
